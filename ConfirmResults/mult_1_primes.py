@@ -1,0 +1,55 @@
+from mmgroup import *
+import timeit
+import sys
+import itertools as it
+from functools import reduce
+import numpy as np
+import time
+import random
+import math
+from itertools import islice
+import multiprocessing as mp
+
+
+a = MM("M<d_200h>")
+b = MM("M<y_756h*x_1b0eh*d_29ah*p_142818544*l_2*p_1415040*l_1*p_12992112*l_1*t_1*l_2*p_2787840*l_2*p_31997178*l_1*t_1*l_2*p_960*l_2*p_10666896*l_1*p_4292160*t_1*l_1*p_1499520*l_1*p_21378434*t_1*l_2*p_1858560*l_2*p_464880*l_1*p_1927680*t_2*l_2*p_1393920*l_1*p_85409856*t_1*l_2*p_2956800*l_1*p_85837058>")
+
+SLPs = [
+    "ababababababbababababbabbabbabb",      #17
+    "ababababababbabababababbabb",          #19
+    "ababababababbabababbababbabbabb",      #23
+    "ab",                                   #29
+    "ababababbabababbababbabb",             #31
+    "abababababbababbabbababbabb",          #41
+    "ababababababababbababbabbabb",         #47
+    "abababababababbabababbababb",          #59
+    "abababababababbabbabababbababbabb"     #71
+]
+
+def word_to_mmgroup(word):
+    ret = MM("M<1>")        #Unit element
+    for letter in word:
+        if letter == 'a':
+            ret *= a
+        if letter == 'b':
+            ret *= b
+
+    return ret
+
+for word in SLPs:
+    g = word_to_mmgroup(word)
+    print(g.order())
+
+
+
+# Output:
+
+# 17
+# 19
+# 23
+# 29
+# 31
+# 41
+# 47
+# 59
+# 71
