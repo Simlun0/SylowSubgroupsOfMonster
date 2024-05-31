@@ -86,7 +86,7 @@ for i in range(len(gens_normal_5)):         #Verify that all generators commute 
         if commutator(a,b).as_int() not in cyclic_as_int:
             Failed = True
 
-print("Verifying that all elements commute mod x5:", not Failed)
+print("Verifying that all generators commute mod x5:", not Failed)
 print()
 
 gens_abc = gens_normal_5[:3]
@@ -106,7 +106,7 @@ for g_abc_as_int in G_abc_as_int:
         Failed = True
 
 
-print("The intersection in trivial modulo x5:", not Failed)
+print("The intersection is trivial modulo x5:", not Failed)
 print()
 
 
@@ -137,11 +137,11 @@ G_comp = group_generated_by(gens_comp_5, n=5**2)
 
 # Checking the normal subgroup 5^{1+6}
 
-# Verifying that all elements commute mod x5: True
+# Verifying that all generators commute mod x5: True
 
 # Limit 625 ; have 625 in time  33.6535
 # Limit 625 ; have 625 in time  35.4755
-# The intersection in trivial modulo x5: True
+# The intersection is trivial modulo x5: True
 
 # Checking the complement 2 * J_2:4
 

@@ -89,7 +89,7 @@ for i in range(len(gens_normal_3)):         #Verify that all generators commute 
         if commutator(a,b).as_int() not in cyclic_as_int:
             Failed = True
 
-print("Verifying that all elements commute mod x3:", not Failed)
+print("Verifying that all generators commute mod x3:", not Failed)
 print()
 
 gens_abc = gens_normal_3[:6]
@@ -109,15 +109,15 @@ for g_abc_as_int in G_abc_as_int:
         Failed = True
 
 
-print("The intersection in trivial modulo x3:", not Failed)
+print("The intersection is trivial modulo x3:", not Failed)
 
 
 # Output:
 
 # Checking the normal subgroup 3^{1+12}
 
-# Verifying that all elements commute mod x3: True
+# Verifying that all generators commute mod x3: True
 
 # Limit 2187 ; have 2187 in time  251.2124
 # Limit 2187 ; have 2187 in time  257.9827
-# The intersection in trivial modulo x3: True
+# The intersection is trivial modulo x3: True

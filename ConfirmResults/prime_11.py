@@ -55,7 +55,7 @@ print("The generators commute:", gens_11[0] * gens_11[1] == gens_11[1] * gens_11
 
 G = group_generated_by(gens_11, n=11**2)
 
-print("The order of the generate group is correct:", len(G) == 11**2)
+print("The order of the generated group is correct:", len(G) == 11**2)
 
 
 
@@ -63,4 +63,4 @@ print("The order of the generate group is correct:", len(G) == 11**2)
 
 # The generators commute: True
 # Limit 121 ; have 121 in time  3.4509
-# The order of the generate group is correct: True
+# The order of the generated group is correct: True

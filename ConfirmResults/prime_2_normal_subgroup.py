@@ -6,7 +6,7 @@ from functools import reduce
 import numpy as np
 import time
 import random
-import math
+import math 
 from itertools import islice
 import multiprocessing as mp
 
@@ -102,7 +102,7 @@ for i in range(len(gens_normal_2)):         #Verify that all generators commute 
         if commutator(a,b).as_int() not in cyclic_as_int:
             Failed = True
 
-print("Verifying that all elements commute mod z:", not Failed)
+print("Verifying that all generators commute mod z:", not Failed)
 print()
 
 gens_abc = gens_normal_2[:12] + [z]         #z is added because it cannot be generated using the generators. 
@@ -122,7 +122,7 @@ for g_abc_as_int in G_abc_as_int:
         Failed = True
 
 
-print("The intersection in trivial modulo z:", not Failed)
+print("The intersection is trivial modulo z:", not Failed)
 print()
 
 
@@ -130,8 +130,8 @@ print()
 
 # Checking the normal subgroup 2^{1+24}
 
-# Verifying that all elements commute mod z: True
+# Verifying that all generators commute mod z: True
 
 # Limit 8192 ; have 8192 in time  1.2322
 # Limit 8192 ; have 8192 in time  1.2418
-# The intersection in trivial modulo z: True
+# The intersection is trivial modulo z: True

@@ -26,6 +26,18 @@ SLPs = [
     "abababababababbabbabababbababbabb"     #71
 ]
 
+primes = [
+    17,
+    19,
+    23,
+    29,
+    31,
+    41,
+    47,
+    59,
+    71
+]
+
 def word_to_mmgroup(word):
     ret = MM("M<1>")        #Unit element
     for letter in word:
@@ -36,9 +48,9 @@ def word_to_mmgroup(word):
 
     return ret
 
-for word in SLPs:
+for index, word in enumerate(SLPs):
     g = word_to_mmgroup(word)
-    print(g.order())
+    print("Order of word:", g.order(), "Expected:", primes[index], "Equal:", g.order()==primes[index])
 
 
 

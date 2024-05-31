@@ -103,7 +103,7 @@ for g_abc_as_int in G_abc_as_int:
         Failed = True
 
 
-print("The intersection in trivial modulo x7:", not Failed)
+print("The intersection is trivial modulo x7:", not Failed)
 print()
 
 
@@ -129,7 +129,7 @@ print("Order of generator:", gen_comp_7.order())
 
 # Limit 343 ; have 343 in time  15.0088
 # Limit 343 ; have 343 in time  14.4152
-# The intersection in trivial modulo x7: True
+# The intersection is trivial modulo x7: True
 
 # Checking the complement 3 x 2S_7
 

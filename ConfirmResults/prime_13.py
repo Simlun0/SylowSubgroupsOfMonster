@@ -83,11 +83,11 @@ print("Verifying that all generators commute mod x13:", not Failed)
 G = group_generated_by(gens_13, n=13**3)            #While we could use the same method as the code for prime_5 and prime_7
                                                     # it is easier to simply generate the whole group in this case.
 
-print("The order of the generate group is correct:", len(G) == 13**3)
+print("The order of the generated group is correct:", len(G) == 13**3)
 
 
 # Output:
 
 # Verifying that all generators commute mod x13: True
 # Limit 2197 ; have 2197 in time  92.9706
-# The order of the generate group is correct: True
+# The order of the generated group is correct: True
