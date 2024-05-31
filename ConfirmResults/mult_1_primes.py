@@ -46,12 +46,12 @@ for index, word in enumerate(SLPs):
 
 # Output:
 
-# 17
-# 19
-# 23
-# 29
-# 31
-# 41
-# 47
-# 59
-# 71
+# Order of word: 17 Expected: 17 Equal: True
+# Order of word: 19 Expected: 19 Equal: True
+# Order of word: 23 Expected: 23 Equal: True
+# Order of word: 29 Expected: 29 Equal: True
+# Order of word: 31 Expected: 31 Equal: True
+# Order of word: 41 Expected: 41 Equal: True
+# Order of word: 47 Expected: 47 Equal: True
+# Order of word: 59 Expected: 59 Equal: True
+# Order of word: 71 Expected: 71 Equal: True
