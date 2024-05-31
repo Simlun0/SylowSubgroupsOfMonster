@@ -1,14 +1,6 @@
 from mmgroup import *
-import timeit
-import sys
-import itertools as it
-from functools import reduce
-import numpy as np
 import time
-import random
-import math
-from itertools import islice
-import multiprocessing as mp
+
 
 def group_generated_by(L, n, order_only=False):     
     """Generates group from array of elements. 

@@ -1,14 +1,4 @@
 from mmgroup import *
-import timeit
-import sys
-import itertools as it
-from functools import reduce
-import numpy as np
-import time
-import random
-import math
-from itertools import islice
-import multiprocessing as mp
 
 
 a = MM("M<d_200h>")
